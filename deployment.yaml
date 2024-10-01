@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lifelike-homepage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lifelike-homepage
+  template:
+    metadata:
+      labels:
+        app: lifelike-homepage
+    spec:
+      containers:
+      - name: lifelike-homepage
+        image: aluspl/lifelike-homepage
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lifelike-homepage-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: lifelike-homepage
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
