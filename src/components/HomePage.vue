@@ -23,6 +23,19 @@
           <i class="fab fa-facebook text-3xl"></i>
         </a>
       </div>
+
+      <!-- Projects Section -->
+      <div class="mt-12 w-full max-w-4xl px-4">
+        <h2 class="text-3xl font-bold mb-8">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Project Card: planbudowlany.online -->
+          <a href="https://planbudowlany.online" target="_blank" rel="noopener noreferrer"
+             class="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all transform hover:scale-105 shadow-lg">
+            <h3 class="text-2xl font-bold mb-2">Plan Budowlany</h3>
+            <p class="text-base text-white/90">Zarządź chaosem</p>
+          </a>
+        </div>
+      </div>
   
       <!-- Simple Animated Construction Text -->
       <div class="mt-8 text-lg font-semibold animate-pulse">
