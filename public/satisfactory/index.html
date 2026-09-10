@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl" class="satisfactory">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Wejście do fabryki</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/serwery/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="crest">
+    <span class="eyebrow">Serwer dedykowany · sesja 2.137</span>
+    <h1>Plan Budowlany</h1>
+    <p class="standfirst">
+      Cztery miejsca, jedna fabryka. <em>Hasła do wejścia nie ma</em> — wystarczy adres,
+      a resztę załatwia gra.
+    </p>
+  </header>
+
+  <section class="gate">
+    <div class="gate__head">
+      <h2>Adres serwera</h2>
+      <span class="tenure">Na stałe</span>
+    </div>
+    <div class="fields">
+      <div class="field">
+        <span class="label">Adres i port</span>
+        <p class="typed">zombie.lifelike.cloud:30777</p>
+        <span class="hint">Wklej razem z portem — bez niego gra szuka pod złym numerem.</span>
+      </div>
+      <div class="field">
+        <span class="label">Hasło do wejścia</span>
+        <p class="typed">brak</p>
+        <span class="hint">Serwer jest już przejęty i nie prosi graczy o hasło.</span>
+      </div>
+    </div>
+    <p class="gate__foot">
+      W menu gry: <b class="key">Server Manager</b> → <b class="key">Add Server</b> → wklej adres
+      z portem. Serwer pojawi się na twojej liście i zostanie tam na kolejne sesje. Adres
+      przeżywa zmianę domowego IP — wpis DNS nadąża w kilka minut.
+    </p>
+  </section>
+
+  <section class="aside">
+    <div class="aside__key">
+      <span class="label">Zanim dołączysz</span>
+      <p class="typed" style="font-size:1.5rem;letter-spacing:0.02em">Sprawdź, czy stoi</p>
+      <span class="tenure tenure--fade">Gry chodzą na zmianę</span>
+    </div>
+    <div class="aside__body">
+      <p>
+        <strong>Jedna maszyna obsługuje kilka gier i tylko jedną naraz.</strong> Jeśli
+        Satisfactory jest akurat wyłączone, na jego miejscu stoi
+        <a href="/valheim/">Valheim</a> albo Zomboid — serwer nie odpowie, dopóki się
+        nie przełączy.
+      </p>
+      <p>
+        Przełączenie to kwestia jednej komendy, więc po prostu napisz. Fabryka czeka
+        w stanie, w jakim ją zostawiliśmy — nic nie przepada.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h3>Zanim napiszesz, że nie działa</h3>
+    <dl class="snags">
+
+      <div class="snag">
+        <dt>Serwer nie odpowiada</dt>
+        <dd>
+          Najczęściej znaczy to, że akurat chodzi inna gra. To pierwsza rzecz do sprawdzenia,
+          zanim zaczniesz grzebać w sieci u siebie.
+        </dd>
+      </div>
+
+      <div class="snag">
+        <dt>Serwer widoczny, ale nie da się dołączyć</dt>
+        <dd>
+          Satisfactory używa dwóch portów: <code>30777</code> do gry i <code>30888</code>
+          do komunikacji. Jeśli pierwszy działa, a wejście i tak się nie kończy, to zwykle
+          drugi nie przechodzi — daj znać, to sprawdzę przekierowanie.
+        </dd>
+      </div>
+
+      <div class="snag">
+        <dt>Gra prosi o hasło administratora</dt>
+        <dd>
+          Trafiłeś na ekran przejmowania serwera, a nie dołączania. Wróć i wybierz sesję
+          <code>2.137</code> — do gry hasło nie jest potrzebne.
+        </dd>
+      </div>
+
+      <div class="snag">
+        <dt>Brak miejsca</dt>
+        <dd>Serwer ma cztery sloty. Piąta osoba musi poczekać, aż ktoś wyjdzie.</dd>
+      </div>
+
+      <div class="snag">
+        <dt>Świat wygląda na cofnięty</dt>
+        <dd>
+          Gra zapisuje się co pięć minut i trzyma pięć ostatnich zapisów. Po nagłym
+          wyłączeniu można stracić najwyżej kilka minut budowania.
+        </dd>
+      </div>
+
+    </dl>
+  </section>
+
+  <footer>
+    <span>Autozapis co pięć minut, pięć ostatnich stanów w zapasie.</span>
+    <span>Nie stawiaj fabryki na spawnie.</span>
+  </footer>
+
+</div>
+</body>
+</html>

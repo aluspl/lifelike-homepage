@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl" class="valheim">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Wejście do Valhalli</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;600&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/serwery/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="crest">
+    <span class="eyebrow">Serwer dedykowany · świat Midgard</span>
+    <h1>Valhalla PlanBudowlany</h1>
+    <p class="standfirst">
+      Crossplay włączony, więc <em>wszyscy gramy razem</em> — PC, Xbox, PS5 i Switch 2
+      w jednym świecie. Zapisz sobie adres: on się nie zmienia.
+    </p>
+  </header>
+
+  <section class="gate">
+    <div class="gate__head">
+      <h2>Adres i hasło</h2>
+      <span class="tenure">Na stałe</span>
+    </div>
+    <div class="fields">
+      <div class="field">
+        <span class="label">Adres serwera</span>
+        <p class="typed">zombie.lifelike.cloud:30456</p>
+        <span class="hint">Wklej razem z portem — bez niego gra szuka pod złym numerem.</span>
+      </div>
+      <div class="field">
+        <span class="label">Hasło</span>
+        <div class="reveal">
+          <button type="button" class="reveal__btn" id="reveal">Pokaż hasło</button>
+          <p class="typed" id="secret" hidden>wikingowie2137</p>
+        </div>
+        <span class="hint">Gra pyta o nie dopiero po połączeniu.</span>
+      </div>
+    </div>
+    <p class="gate__foot">
+      W menu gry: <b class="key">Join Game</b> → <b class="key">Add server</b> → wklej adres.
+      Raz dodany zostaje na twojej liście, więc następnym razem po prostu go klikasz.
+      Adres przeżywa restarty serwera i zmianę domowego IP — wpis DNS nadąża w kilka minut.
+    </p>
+  </section>
+
+  <section class="aside">
+    <div class="aside__key">
+      <span class="label">Kod zapasowy</span>
+      <p class="typed">245537</p>
+      <span class="tenure tenure--fade">Wygasa przy restarcie</span>
+    </div>
+    <div class="aside__body">
+      <p>
+        <strong>Wpisz go, jeśli grasz na konsoli</strong> albo siedzisz w tej samej sieci
+        co serwer — w obu przypadkach droga po adresie nie zadziała.
+      </p>
+      <p>
+        Kod żyje tylko tak długo, jak serwer stoi bez przerwy. Po aktualizacji gry albo
+        restarcie maszyny dostajesz błąd — poproś wtedy o świeży. Adres w tym czasie
+        działa dalej.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h3>Skąd wchodzisz</h3>
+    <div class="platforms">
+      <div class="platform"><span class="name">PC — Steam</span><span class="how"><b>Adres</b></span></div>
+      <div class="platform"><span class="name">PC — Game Pass</span><span class="how"><b>Adres</b></span></div>
+      <div class="platform"><span class="name">Xbox</span><span class="how"><i>Kod</i></span></div>
+      <div class="platform"><span class="name">PS5</span><span class="how"><i>Kod</i></span></div>
+      <div class="platform"><span class="name">Switch 2</span><span class="how"><i>Kod</i></span></div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Zanim napiszesz, że nie działa</h3>
+    <dl class="snags">
+
+      <div class="snag">
+        <dt>Jesteś w tym samym domu co serwer</dt>
+        <dd>
+          Wejdź kodem. Przy włączonym crossplayu Valheim nie łączy się po adresie lokalnym,
+          a wejście na własny adres publiczny z wnętrza tej samej sieci zależy od routera
+          i zwykle nie przechodzi.
+        </dd>
+      </div>
+
+      <div class="snag">
+        <dt>Adres nie chce się dodać</dt>
+        <dd>
+          Sprawdź, czy port <code>30456</code> został wklejony razem z nazwą. Sam
+          <code>zombie.lifelike.cloud</code> prowadzi donikąd — pod tym adresem stoi kilka
+          gier i to port je rozróżnia.
+        </dd>
+      </div>
+
+      <div class="snag">
+        <dt>Kod odbija się z błędem</dt>
+        <dd>Serwer wstał od nowa i wygenerował inny. Poproś o aktualny albo wejdź adresem.</dd>
+      </div>
+
+      <div class="snag">
+        <dt>Twoja postać znika po zmianie urządzenia</dt>
+        <dd>
+          Postać trzymasz u siebie, na serwerze leży wyłącznie świat. Przesiadka na inny
+          sprzęt oznacza nową postać, chyba że przeniesiesz zapis ręcznie.
+        </dd>
+      </div>
+
+      <div class="snag">
+        <dt>Serwer nie odpowiada wieczorem</dt>
+        <dd>
+          Ta sama maszyna obsługuje kilka gier na zmianę i Valheim mógł ustąpić miejsca
+          innej — na przykład <a href="/satisfactory/">Satisfactory</a>. Napisz, to kwestia
+          jednej komendy.
+        </dd>
+      </div>
+
+    </dl>
+  </section>
+
+  <footer>
+    <span>Świat zapisuje się automatycznie, kopia zapasowa powstaje co sześć godzin.</span>
+    <span>Buduj śmiało.</span>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('reveal').addEventListener('click', function () {
+    document.getElementById('secret').hidden = false;
+    this.hidden = true;
+  });
+</script>
+</body>
+</html>

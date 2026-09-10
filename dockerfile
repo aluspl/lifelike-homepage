@@ -28,6 +28,9 @@ FROM nginx:alpine
 # Copy the built files from the previous stage to the Nginx container
 COPY --from=build /app/dist /usr/share/nginx/html
 
+# Wzgledne przekierowania katalogowe - patrz komentarz w nginx.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 # Expose port 80
 EXPOSE 80
 
