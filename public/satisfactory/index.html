@@ -18,14 +18,14 @@
     <span class="eyebrow">Serwer dedykowany · sesja 2.137</span>
     <h1>Plan Budowlany</h1>
     <p class="standfirst">
-      Cztery miejsca, jedna fabryka. <em>Hasła do wejścia nie ma</em> — wystarczy adres,
-      a resztę załatwia gra.
+      Cztery miejsca, jedna fabryka. Potrzebujesz <em>adresu i hasła</em> — oba niżej,
+      resztę załatwia gra.
     </p>
   </header>
 
   <section class="gate">
     <div class="gate__head">
-      <h2>Adres serwera</h2>
+      <h2>Adres i hasło</h2>
       <span class="tenure">Na stałe</span>
     </div>
     <div class="fields">
@@ -36,8 +36,11 @@
       </div>
       <div class="field">
         <span class="label">Hasło do wejścia</span>
-        <p class="typed">brak</p>
-        <span class="hint">Serwer jest już przejęty i nie prosi graczy o hasło.</span>
+        <div class="reveal">
+          <button type="button" class="reveal__btn" id="reveal">Pokaż hasło</button>
+          <p class="typed" id="secret" hidden>ZombieZombieZombie</p>
+        </div>
+        <span class="hint">Gra pyta o nie przy dołączaniu do serwera.</span>
       </div>
     </div>
     <p class="gate__foot">
@@ -92,7 +95,8 @@
         <dt>Gra prosi o hasło administratora</dt>
         <dd>
           Trafiłeś na ekran przejmowania serwera, a nie dołączania. Wróć i wybierz sesję
-          <code>2.137</code> — do gry hasło nie jest potrzebne.
+          <code>2.137</code>. Hasło administratora to co innego niż hasło do wejścia —
+          graczom wystarcza to z góry strony.
         </dd>
       </div>
 
@@ -118,5 +122,11 @@
   </footer>
 
 </div>
+<script>
+  document.getElementById('reveal').addEventListener('click', function () {
+    document.getElementById('secret').hidden = false;
+    this.hidden = true;
+  });
+</script>
 </body>
 </html>
